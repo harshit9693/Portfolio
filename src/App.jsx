@@ -8,11 +8,13 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
+import FloatingIcons from "./components/FloatingIcons";
 
 const App = () => {
   return (
     <>
       <ParticleBackground />
+      <FloatingIcons />
       <Navbar />
       <Hero />
       <About />
