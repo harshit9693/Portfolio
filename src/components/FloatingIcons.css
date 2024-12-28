@@ -53,8 +53,8 @@
 }
 
 .main-icon img {
-  width: 85px;
-  height: 85px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
