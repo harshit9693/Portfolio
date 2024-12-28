@@ -28,6 +28,7 @@ const FloatingIcons = () => {
             className="icon-item"
           >
             <img src={leetcode} alt="LeetCode" />
+            <span className="icon-label">LeetCode Profile</span>
           </a>
           <a
             href="https://codeforces.com/profile/noobcoder_08"
@@ -36,6 +37,7 @@ const FloatingIcons = () => {
             className="icon-item"
           >
             <img src={codeforces} alt="Codeforces" />
+            <span className="icon-label">Codeforce Profile</span>
           </a>
           <a
             href="https://www.geeksforgeeks.org/user/hp96930anex/"
@@ -44,6 +46,7 @@ const FloatingIcons = () => {
             className="icon-item"
           >
             <img src={gfg} alt="GeeksforGeeks" />
+            <span className="icon-label">GFG Profile</span>
           </a>
         </div>
       )}
