@@ -8,6 +8,7 @@ import BookStore from "../assets/bookstore.jpeg";
 import Cards from "./Cards";
 import chatbot from "../assets/chatbot.png";
 import wca from "../assets/wca.png";
+import news from "../assets/dn.png";
 
 const Projects = () => {
   const projectJson = [
@@ -24,6 +25,13 @@ const Projects = () => {
       image: chatbot,
       live: "https://github.com/harshit9693/Chatbot",
       github: "https://github.com/harshit9693/Chatbot",
+    },
+    {
+      title: "News and Payout Dashboard",
+      desc: "A responsive web application that provides a dashboard for viewing news articles and managing payouts. The application features user authentication, search and filter capabilities, and export functionality.",
+      image: news,
+      live: "https://news-dashboard-j886.onrender.com/",
+      github: "https://github.com/harshit9693/news-dashboard",
     },
     {
       title: "Whatsapp Chat Analyzer",
