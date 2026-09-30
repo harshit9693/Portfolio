@@ -10,9 +10,30 @@ import Bootstrap from "../assets/Bootstrap.png";
 import NodeLogo from "../assets/NodeLogo.png";
 import Mongodb from "../assets/mongodb.svg";
 import Express from "../assets/Express.png";
-import NextJs from "../assets/NextJs.png";
 import c from "../assets/c++logo.png";
 import python from "../assets/pythonLogo.png";
+
+// Skills with an icon. Add an `img` for any new skill you have a logo for.
+const skills = [
+  { name: "Flutter" },
+  { name: "Dart" },
+  { name: "HTML", img: Html, size: "w-10" },
+  { name: "CSS", img: Css, size: "w-8" },
+  { name: "Javascript", img: Javascript, size: "w-10" },
+  { name: "React", img: ReactLogo, size: "w-8 rounded-full" },
+  { name: "Redux", img: ReduxLogo, size: "w-8" },
+  { name: "Tailwind Css", img: Tailwind, size: "w-8 rounded-full" },
+  { name: "Bootstrap", img: Bootstrap, size: "w-10" },
+  { name: "Node Js", img: NodeLogo, size: "w-10" },
+  { name: "Mongodb", img: Mongodb, size: "w-10" },
+  { name: "Express Js", img: Express, size: "w-10" },
+  { name: "C++", img: c, size: "w-9" },
+  { name: "Python", img: python, size: "w-9" },
+];
+
+const chip =
+  "border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300";
+
 const About = () => {
   return (
     <div className="relative" id="about">
@@ -26,8 +47,8 @@ const About = () => {
               Hi, I'm Harshit Kumar
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              A Full-Stack Developer with expertise in web development and the
-              MERN stack.
+              A Software Engineer with experience in Flutter mobile development
+              and the MERN stack.
             </p>
           </div>
           <div className="mt-10">
@@ -37,13 +58,16 @@ const About = () => {
                   My Journey
                 </h3>
                 <p className="mt-4 text-lg text-gray-600">
-                  I started my journey in web development with a passion for
-                  creating intuitive and scalable applications. With proficiency
-                  in the MERN stack (MongoDB, Express.js, React, and Node.js), I
-                  have built Projects such as a full-stack BookStore website ,
-                  games websites, and even a AI Chatbot. My projects demonstrate
-                  my ability to integrate poweful backend solutions with sleek,
-                  user-friendly frontend designs.
+                  I graduated in Computer Science from NIT Patna in 2025. I
+                  started with the MERN stack, building a full-stack BookStore,
+                  game websites and an AI chatbot, then moved into cross-platform
+                  mobile development with Flutter.
+                </p>
+                <p className="mt-4 text-lg text-gray-600">
+                  At Bellpost, I built Flutter apps with search, analytics and
+                  API integrations. Today, at the Centre for Railway Information
+                  Systems (CRIS), I build RailPrahari, an app for railway
+                  officers, and the GRP integration for RailMadad.
                 </p>
                 <img
                   src={MernStack}
@@ -51,59 +75,19 @@ const About = () => {
                   className="p-2 rounded-lg w-52 mt-4"
                 />
               </div>
-              <div className="border border-red-200 rounded-lg md:p-7 py-7  flex flex-col gap-8 items-center shadow-lg shadow-red-300">
+              <div className="border border-red-200 rounded-lg md:p-7 py-7 flex flex-col gap-8 items-center shadow-lg shadow-red-300">
                 <h3 className="text-2xl font-semibold text-red-600">
                   Skills & Expertise
                 </h3>
                 <div className="flex items-center justify-center flex-wrap gap-3">
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={Html} alt="" className="w-10" />
-                    <span className="font-semibold">HTML</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={Css} alt="" className="w-8" />
-                    <span className="font-semibold">CSS</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={Javascript} alt="" className="w-10" />
-                    <span className="font-semibold">Javascript</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={ReactLogo} alt="" className="w-8 rounded-full" />
-                    <span className="font-semibold">React</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={ReduxLogo} alt="" className="w-8" />
-                    <span className="font-semibold">Redux</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={Tailwind} alt="" className="w-8 rounded-full" />
-                    <span className="font-semibold">Tailwind Css</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={Bootstrap} alt="" className="w-10" />
-                    <span className="font-semibold">Bootstrap</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={NodeLogo} alt="" className="w-10" />
-                    <span className="font-semibold">Node Js</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center  w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={Mongodb} alt="" className="w-10" />
-                    <span className="font-semibold">Mongodb</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={Express} alt="" className="w-10" />
-                    <span className="font-semibold">Express Js</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={c} alt="" className="w-9" />
-                    <span className="font-semibold">C++</span>
-                  </div>
-                  <div className="border border-red-300 flex items-center gap-1 w-max px-2 py-1 rounded-lg shadow-md shadow-red-300">
-                    <img src={python} alt="" className="w-9" />
-                    <span className="font-semibold">Python</span>
-                  </div>
+                  {skills.map((skill) => (
+                    <div key={skill.name} className={chip}>
+                      {skill.img && (
+                        <img src={skill.img} alt="" className={skill.size} />
+                      )}
+                      <span className="font-semibold">{skill.name}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -113,12 +97,11 @@ const About = () => {
               More About Me
             </h3>
             <p className="mt-4 text-lg text-gray-600">
-              Apart from web development, I am passionate about competitive
-              programming and solving challenging data structure problems. I
-              enjoy honing my problem-solving skills through coding contests and
-              exploring efficient algorithms. My love for programming drives me
-              to stay updated with the latest trends and continuously improve my
-              expertise in the field.
+              I enjoy competitive programming and solving data structure
+              problems. I am a LeetCode Knight (max rating 1855, top 5%
+              globally) with 850+ problems solved, and I take part in contests
+              on Codeforces and GeeksforGeeks. I was also part of Amazon ML
+              School 2024.
             </p>
           </div>
         </div>
