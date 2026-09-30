@@ -19,19 +19,20 @@ const Hero = () => {
               I'm Harshit <span className="text-red-500">Kumar</span>
             </h1>
             <p className="md:text-2xl text-xl mb-4">
-              Full Stack Web Developer || Competitive Programmer
+              Software Engineer @ CRIS || Flutter & MERN Developer
             </p>
             <p className="mb-4">
-              I'm a final-year CSE student at NIT Patna with a passion for MERN
-              stack development, machine learning, and solving data structure
-              problems. I enjoy building dynamic web apps and leveraging ML to
-              tackle real-world challenges.
+              CSE graduate from NIT Patna, currently building RailPrahari and
+              RailMadad integrations for Indian Railways at CRIS. I work with
+              Flutter and the MERN stack, and I enjoy competitive programming
+              (LeetCode Knight, 850+ problems solved).
             </p>
             <button className="bg-black text-white px-3 py-2 w-max rounded-md">
               <a
                 href="https://drive.google.com/drive/folders/1tKSfgA_GqJtE52LzqD0QlgZ2PQ49EyAh?usp=drive_link"
                 download
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Download Resume
               </a>
